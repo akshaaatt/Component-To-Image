@@ -1,7 +1,7 @@
 import html2canvas from 'html2canvas';
 import './ComponentToImage.css';
 
-const HtmlCanvasDemo = () =>{
+const HtmlCanvasDemo = () => {
 
     const exportAsPicture = () => {
         const html = document.getElementsByTagName('HTML')[0];
@@ -34,7 +34,6 @@ const HtmlCanvasDemo = () =>{
         const elem = window.document.createElement('a');
         elem.href = blob
         elem.download = fileName;
-        elem.style = 'display:none;';
         (document.body || document.documentElement).appendChild(elem);
         if (typeof elem.click === 'function') {
             elem.click();
@@ -53,9 +52,10 @@ const HtmlCanvasDemo = () =>{
     return (
         <div className="row text-center justify-content-center align-content-center align-items-center">
             <div id="card" className="col-8 card" style={{width: "24rem"}}>
-                <img className="card-img-top" src="../assets/listenbrainz-logo.svg" style={{width: "16rem", height:"8rem", padding: "1rem"}} alt="ListenBrainz"/>
+                <img className="card-img-top" src="assets/ListenBrainz_logo.png" style={{width: "16rem", padding: "1rem"}} alt="ListenBrainz"/>
                 <h2 className="card-title">Year In Music 2021</h2>
                 <h5 className="card-title">akshaaatt's Top Artists</h5>
+                <img className="card-img-top" src="assets/mgk.jpg" style={{width: "128px", height: "128px", padding: "4px", margin: "4px"}} alt="Tickets to my Downfall"/>
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item">Linkin Park</li>
                     <li className="list-group-item">Machine Gun Kelly</li>
