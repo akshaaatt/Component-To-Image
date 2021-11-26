@@ -1,0 +1,18 @@
+.parent {
+  text-align: center;
+  overflow: auto;
+  display: block;
+  margin: auto;
+}
+
+h1{
+  width: 100%;
+  white-space: nowrap;
+}
+
+p, button {
+  display: block;
+  text-align: center;
+  margin: 10px auto auto;
+}
+
