@@ -1,7 +1,10 @@
 .card{
-    background-color: black;
-    color: white;
     align-content: center;
     align-items: center;
     justify-content: center;
+    margin: 20px;
+}
+.list-group{
+    background: black;
+    color: white;
 }
